@@ -5,8 +5,7 @@ This work is based on [Telegram library](https://github.com/python-telegram-bot/
 ## Environment requirement
 Python 3
 
-### Get started
-0.
+###
 </a>
 </p>
 <p align="center">
@@ -19,6 +18,8 @@ Python 3
 </a>
 </p>
 </details>
+
+### Get started
 
 1. Get Telegram bot api id from @Botfather, and fill it into TG_TOKEN in config.py
 
