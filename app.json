@@ -1,0 +1,52 @@
+{
+    "name": "AutoCaptionAdder_Bot",
+    "description": "Auto Caption Adder Bot",
+    "keywords": [
+        "Private",
+        "Auto",
+        "Caption",
+        "Bot"
+    ],
+    "repository": "https://github.com/xenoda/Telegram-Feedback-Bot",
+    "env": {
+        "TG_TOKEN": {
+            "description": "Your Bot Token",
+            "value": ""
+        },
+        "CHAT_ID": {
+            "description": "Chat ID of forwarded messages destination",
+            "value": ""
+                  },
+        "PROXY": {
+            "description": "Proxy",
+            "value": ""
+            "required": false
+        },
+        "BOT_TIMEOUT": {
+            "description": "Timeout between individual retries (sent messages)",
+            "required": false
+        },
+        "BOT_RETRIES": {
+            "description": "Number of retries",
+            "required": false
+        },
+        "USER_JSON": {
+            "description": "Path to user_book.json file",
+            "value": "'user_book.json'"
+        "ADMIN_LIST": {
+            "description": "Path to admin.txt file",
+            "value": "'admin.txt'"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
